@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/buscar_nota.css">
+    <script src="/static/javascript/funcao.js"></script>
+    <link rel="shortcut icon" href="/static/img/icon-salvar.png">
+    <title>Fast Note</title>
+</head>
+<body>
+
+    <div class="container">
+    <div class="menu">
+        <a href="/front/nota"><img src="/static/img/icon-criar.png" class="adicionar" alt="Adicionar nota"></a>
+            <img src="/static/img/icon-pesquisar.png" class="pesquisar" alt="Pesquisar nota"
+            onclick="esconder_mostrar('pesquisa')">
+    </div>
+    
+    <section id="buscar">
+        <form action="/todas/notas" method="GET"> 
+            <div class="buscar" id="pesquisa">
+                <input type="text" id="campo-buscar" placeholder="Minhas notas" required>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+    </section>
+    </div>
+
+</body>
+</html>

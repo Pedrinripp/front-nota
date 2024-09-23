@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/nota.css">
+    <script src="/static/javascript/funcao.js"></script>
+    <link rel="shortcut icon" href="/static/img/icon-salvar.png">
+    <title>Fast Note</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="menu">
+            <img src="/static/img/icon-criar.png" class="adicionar" alt="Adicionar nota"
+                onclick="mostrar_esconder('nota')">
+            <a href="/front/toda/nota"><img src="/static/img/icon-pesquisar.png" class="pesquisar" alt="Pesquisar nota"></a> 
+        </div>
+
+        <main>
+            <form action="/front/enviar-nota" method="POST">
+                <div class="bloco-nota" id="nota">
+                    <h3><i>Titulo</i></h3>
+                    <label for="titulo"></label>
+                    <input class="titulo" type="text" name="titulo" id="titulo" placeholder="Insira o titulo" required>
+
+                    <h3 class="h3-id"><i>Id</i></h3>
+                    <label for="id_usuario"></label>
+                    <input class="id_usuario" type="text" name="id_usuario" id="id_usuario" placeholder="Id do usuario">
+
+                    <label for="anotacao"></label>
+                    <textarea name="anotacao" id="anotacao" placeholder="Insira seu texto..." required></textarea>
+
+                    <button name="salvar" type="submit" id="salvar"><b><i>Salvar</i></b></button>
+
+                    <div id="menssagem" class="msg-alerta">Salvo com sucesso! <img src="/static/img/icon-salvar-48.png"></a></div>
+
+                </div>
+            </form>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

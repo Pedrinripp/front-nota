@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #3f3f3fe0;
+    
+
+}
+
+#menssagem{
+    position: absolute;
+    top: 580px;
+    left: 910px;
+    font-size: 22px;
+    padding-left: 16px;
+    height: 65px;
+    width: 250px;
+    border: 2px solid #0DF117;
+    border-radius: 10px;
+    color: yellow;
+}
+#menssagem.show{
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+.msg-alerta{
+    opacity: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background:#2c2c2c;
+    height: 100vh;
+    width: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adicionar {
+    position: absolute;
+    top: 104px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+}
+
+.adicionar:hover{
+    background-color: rgb(250, 213, 3);
+    border-radius: 33px;
+    border: 100px;
+}
+
+.pesquisar{
+    border-radius: 66px;
+    position: absolute;
+    top: 164px;
+    left: 0px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+.pesquisar:hover{
+    background-color: rgb(250, 213, 3);
+}
+
+main {
+    flex-grow: 1;
+    margin-left: 9vh; /* Largura do menu */
+    padding: 1em;
+    
+
+}
+
+.bloco-nota {
+    height: 500px;
+    width: 808px;
+}
+
+.bloco-nota h3 {
+    color:rgb(250, 213, 3);
+    font-size: 34px;
+    top: 40px;
+    left: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo{
+    height: 22px;
+    width: 400px;
+    outline: none;
+    background-color: #3f3f3fe0;
+    color: aliceblue;
+    position: relative;
+    border: 2px solid rgb(250, 213, 3);
+    border-radius: 9px;
+    top: 32px;
+    left: 13px;
+    display: inline-block;
+}
+
+.h3-id{
+    color:rgb(250, 213, 3);
+    font-size: 34px;
+    top: 40px;
+    margin-left: 31px;
+    position: relative;
+    display: inline-block;
+
+}
+.id_usuario{
+    height: 22px;
+    width: 100px;
+    outline: none;
+    background-color: #3f3f3fe0;
+    color: aliceblue;
+    position: relative;
+    border: 2px solid rgb(250, 213, 3);
+    border-radius: 9px;
+    top: 32px;
+    left: 13px;
+    display: inline-block;
+}
+.bloco-nota textarea {
+    background-color: #3f3f3fe0;
+    color: aliceblue;
+    height: 380px;
+    width: 700px;
+    margin-top: 1em;
+    outline: none;
+    font: 'Courier New', Courier;
+    font-size: 13px;
+    border: 2px solid rgb(250, 213, 3);
+    border-radius: 12px;
+    max-height: 72vh;
+    max-width: 100vh;
+    min-width: 50vh;
+
+}
+
+.bloco-nota button {
+    height: 30px;
+    width: 70px;
+    color: rgb(250, 213, 3);
+    background-color: #3f3f3fe0;
+    border: 2px solid rgb(250, 213, 3);
+    border-radius: 12px;
+    margin-top: 1em;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.bloco-nota button:hover{
+    border: 2px solid black;
+    background-color: rgb(250, 213, 3);
+    color: black;
+}
+
